@@ -19,6 +19,7 @@ RRECOMMENDS:${PN} = "p11-kit"
 inherit cmake
 
 EXTRA_OECMAKE = " \
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
     -DATCA_HAL_I2C=ON \
     -DATCA_PKCS11=ON \
     -DATCA_OPENSSL=ON \
